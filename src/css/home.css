@@ -1,0 +1,127 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0; 
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2e2e2e; 
+    color: white;
+    height: 470px;
+    width: 320px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 0 0 15px 15px; 
+    overflow: auto;;
+    scrollbar-width: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.illustration {
+    max-width: 75%;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 35px;
+}
+
+h5 {
+    font-size: 1.2rem;
+    color: #d0d0d0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.notes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;  
+}
+
+.note-item {
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    color: #2e2e2e; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease;
+    width: 260px;
+    height: 20px;
+    overflow: hidden;
+}
+
+
+@media (max-width: 573px) {
+    .home {
+        width: 90%;
+        height: auto; 
+        max-height: 470px;
+        padding: 15px;
+    }
+
+    .content {
+        margin-bottom: 40px;
+    }
+
+    .illustration {
+        max-width: 70%;
+    }
+
+    .add-note {
+        bottom: 15px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .add-icon {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .home {
+        width: 90%;
+        height: 400px;     
+        padding: 10px;
+        left: 8px;
+    }
+
+    .illustration {
+        max-width: 70%;
+        margin-top: 40px;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
+
+    .add-note {
+        bottom: 15px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .add-icon {
+        font-size: 1.6rem;
+    }
+}

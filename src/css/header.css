@@ -1,0 +1,91 @@
+/* Main header container */
+.heading-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 320px;
+    padding: 10px 20px;
+    background-color: #2e2e2e; /* Dark background to match the screen */
+    color: white;
+    border-radius: 15px 15px 0 0; /* Rounded corners at the top */
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    margin-top: 3px;
+}
+
+/* Header title styling */
+.heading-area h2 {
+    margin: 0;
+    font-size: 1.8rem; /* Keep the original font size */
+    font-weight: 400;
+    color: white;
+    margin-top: 8px;
+}
+
+/* Icons container */
+.icons {
+    display: flex;
+    gap: 15px; /* Adds space between the icons */
+    margin-top: 8px;
+}
+
+/* Individual icon styling */
+.icon {
+    cursor: pointer;
+    color: white;
+    font-size: 1.8rem; /* Keep the original size for icons */
+}
+
+/* Styling for the Itens button */
+.itens-button {
+    background-color: #4CAF50; /* Green color for the button */
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.itens-button:hover {
+    background-color: #45a049; /* Darker green when hovering */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 573px) {
+    .heading-area {
+        width: 90%;
+    }
+}
+
+@media (max-width: 450px) {
+    .heading-area {
+        width: 90%;
+    }
+
+    .heading-area h2 {
+        font-size: 1.5rem;
+    }
+
+    .icon {
+        font-size: 1.6rem;
+    }
+}
+
+@media(max-width: 500px){
+    .heading-area {
+        width: 90%;
+        margin-left: 8px;
+    }
+
+    .heading-area h2 {
+        font-size: 1.2rem;
+    }
+
+    .icon {
+        font-size: 1rem;
+    }
+}
