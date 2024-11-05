@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    margin: 0;
+    padding: 20px;
+}
+
+.page-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+    height: 470px;
+    width: 320px;
+}
+
+.funcionarios h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+.add-button, .action-button, .delete-button, .add-funcao-button {
+    background-color: transparent;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px; 
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.add-button, .action-button, .delete-button, .add-funcao-button {
+    background-color: transparent;
+    border: none; /* Sem borda */
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px; 
+    transition: background-color 0.3s, color 0.3s;
+    flex: 1; 
+}
+
+.funcionarios-input, .funcao-input {
+    margin: 10px 0;
+    display: flex;
+    gap: 10px; 
+    align-items: center; 
+}
+
+.funcionarios-input input, .funcao-input input {
+    flex: 1;
+    padding: 8px; 
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px; 
+}
+
+.funcionarios-input input:focus, .funcao-input input:focus {
+    border-color: #000000;
+    outline: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    margin: 5px 0;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+.funcionario-nome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.funcionario-actions {
+    display: none; 
+}
+
+li:hover .funcionario-actions {
+    display: flex; 
+}
+
+.funcao-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.funcao-actions {
+    display: none; 
+}
+
+.funcao-item:hover .funcao-actions {
+    display: flex; 
+}
+
+.edit-icon, .delete-icon, .add-funcao-button {
+    width: 20px; 
+    height: 20px; 
+    margin-left: 5px; 
+}
+
+.plus-icon {
+    width: 20px;
+    height: 20px; 
+    align-self: center;
+  }

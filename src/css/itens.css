@@ -1,0 +1,159 @@
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: white; 
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px; 
+    border: 2px solid black;
+}
+
+.itens-container {
+    width: 100%;
+    color: black; 
+}
+
+h2 {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 15px;
+    text-align: center; 
+}
+
+.entrada-itens {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.add-button, .edit-button, .delete-button {
+    padding: 10px 15px;
+    background-color: white; 
+    color: black; 
+    border: 2px solid black; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.add-button:hover, .edit-button:hover, .delete-button:hover {
+    background-color: black; 
+    color: white; 
+}
+
+.lista-itens {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.item {
+    padding: 15px;
+    border: 2px solid black; 
+    border-radius: 5px; 
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.acoes {
+    display: flex;
+    align-items: center; 
+}
+
+.edit-button, .delete-button {
+    margin-left: 10px; 
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: white; 
+    border: 2px solid black; 
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px; 
+}
+
+.itens-container {
+    width: 100%;
+    color: black; 
+}
+
+h2 {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 15px;
+    text-align: center; 
+}
+
+.entrada-itens {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.add-button, .edit-button, .delete-button {
+    padding: 10px 15px;
+    background-color: white; 
+    color: black; 
+    border: 2px solid black; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.add-button:hover, .edit-button:hover, .delete-button:hover {
+    background-color: black; 
+    color: white; 
+}
+
+.lista-itens {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.item {
+    padding: 15px;
+    border: 2px solid black; 
+    border-radius: 5px; 
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.acoes {
+    display: flex;
+    align-items: center; 
+}
+
+.edit-button, .delete-button {
+    margin-left: 10px; 
+}
+
+/* Prioridade Baixa - Verde Pastel */
+.prioridade-baixa {
+    background-color: #d4f8e8; /* Verde suave */
+    color: #2e7d32;
+}
+
+/* Prioridade Média - Amarelo Pastel */
+.prioridade-media {
+    background-color: #fff4cc; /* Amarelo suave */
+    color: #b28704;
+}
+
+/* Prioridade Alta - Vermelho Pastel */
+.prioridade-alta {
+    background-color: #ffe1e1; /* Vermelho suave */
+    color: #d32f2f;
+}

@@ -1,3 +1,4 @@
+// NoteMenu.jsx
 import React, { useContext } from 'react';
 import { Menu, MenuItem } from '@mui/material';
 import { NotesContext } from './NotesContext';
@@ -8,7 +9,7 @@ export default function NoteMenu({ anchorEl, open, onClose, index }) {
     const navigate = useNavigate();
 
     const handleView = () => {
-        navigate(`/view/${index}`);
+        navigate(`/view/${index}`); // Garante que o index seja enviado corretamente
         onClose();
     };
 
@@ -28,7 +29,7 @@ export default function NoteMenu({ anchorEl, open, onClose, index }) {
             open={open}
             onClose={onClose}
         >
-            <MenuItem onClick={handleView}>Ver</MenuItem>
+            <MenuItem onClick={handleView}>Ver Nota Completa</MenuItem>
             <MenuItem onClick={handleEdit}>Editar</MenuItem>
             <MenuItem onClick={handleDelete}>Deletar</MenuItem>
         </Menu>
