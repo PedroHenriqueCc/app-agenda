@@ -1,9 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import index from './index'; 
-import noteContext from './noteContext'; 
-import editNote from './editNote'; 
+import index from './index';  
 import itens from './itens';
 import funcionarios from './funcionarios'; 
 
@@ -21,22 +19,17 @@ export default function App() {
         <Stack.Screen
           name="noteContext"
           component={noteContext}
-          options={{ title: 'Adicionar Nota' }}
-        />
-        <Stack.Screen
-          name="editNote"
-          component={editNote}
-          options={{ title: 'Editar Nota' }}
+          options={{ headerShown: false  }}
         />
         <Stack.Screen
           name="itens"
           component={itens}
-          options={{ title: 'Itens' }}
+          options={{ headerShown: false }}
         />
         <Stack.Screen
           name="funcionarios"
           component={funcionarios}
-          options={{ title: 'Funcionarios' }}
+          options={{ headerShown: false  }}
         />
       </Stack.Navigator>
     </NavigationContainer>
