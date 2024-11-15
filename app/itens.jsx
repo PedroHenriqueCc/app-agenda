@@ -3,7 +3,7 @@ import { Text, View, TouchableOpacity, Animated, PanResponder, TextInput, StyleS
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
-const itens = () => {
+const Itens = () => {
   const [itens, setItens] = useState([]);
   const [nota, setNota] = useState('');
   const [prioridade, setPrioridade] = useState('verde');
@@ -408,4 +408,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default itens;
+export default Itens;

@@ -2,16 +2,21 @@
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "strict": true,
+    "baseUrl": ".",  // Ensure the base URL is set to the project root
     "paths": {
-      "@/*": [
-        "./*"
-      ]
+      "@/*": ["./*"],
+      "@app/*": ["app/*"],  // Mapping to resolve app directory
+      "@tests/*": ["__tests__/*"]  // This maps the test folder
     }
   },
   "include": [
     "**/*.ts",
     "**/*.tsx",
     ".expo/types/**/*.ts",
-    "expo-env.d.ts"
-, "app/_layout.jsx", "app/index.jsx"  ]
+    "expo-env.d.ts",
+    "app/_layout.jsx",
+    "AgendaApp/app/Index.jsx",
+    "AgendaApp/app/agendaUtils.js", // Include the utility file for testing
+    "__tests__/**/*.test.js" // Include test files in __tests__
+  ]
 }

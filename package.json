@@ -27,6 +27,9 @@
       "**/?(*.)+(spec|test).js?(x)"
     ]
   },
+  "scripts": {
+  "test": "jest"
+  },
   "dependencies": {
     "@ant-design/icons": "^5.5.1",
     "@expo/vector-icons": "^14.0.2",

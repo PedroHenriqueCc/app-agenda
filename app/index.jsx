@@ -5,7 +5,6 @@ import { Calendar } from 'react-native-calendars';
 import Icon from 'react-native-vector-icons/AntDesign';
 import { useNavigation } from '@react-navigation/native';
 import DateTimePickerModal from 'react-native-modal-datetime-picker';
-import moment from 'moment-timezone';
 import * as Notifications from 'expo-notifications';
 
 Notifications.setNotificationHandler({
@@ -16,7 +15,7 @@ Notifications.setNotificationHandler({
   }),
 });
 
-const index = () => {
+const Index = () => {
   const navigation = useNavigation();
   const fadeAnim = useRef(new Animated.Value(0)).current;
   const [notes, setNotes] = useState([]);
@@ -303,4 +302,4 @@ const styles = StyleSheet.create({
     },
   });
 
-export default index;
+export default Index;

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`agendaUtils functions should match the snapshot of notes array 1`] = `
+[
+  {
+    "dateTime": "2024-11-15T10:00:00.000Z",
+    "text": "Note 1",
+  },
+  {
+    "dateTime": "2024-11-16T11:00:00.000Z",
+    "text": "Note 2",
+  },
+]
+`;

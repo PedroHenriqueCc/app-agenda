@@ -4,7 +4,7 @@ import { Picker } from '@react-native-picker/picker';
 import Icon from 'react-native-vector-icons/AntDesign';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const funcionarios = () => {
+const Funcionarios = () => {
     const [funcionarios, setFuncionarios] = useState([]);
     const [newFuncionario, setNewFuncionario] = useState('');
     const [isAdding, setIsAdding] = useState(false);
@@ -364,4 +364,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default funcionarios;
+export default Funcionarios;
